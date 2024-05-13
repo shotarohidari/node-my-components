@@ -1,0 +1,21 @@
+{
+  "name": "my-components",
+  "version": "0.1",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check":"npx tsc --noEmit",
+    "build":"rm -r dist && npx tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/react": "^18.3.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "react": "^18.3.1"
+  }
+}
