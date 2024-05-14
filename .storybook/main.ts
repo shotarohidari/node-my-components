@@ -1,4 +1,6 @@
-import type { StorybookConfig } from "@storybook/react-vite";
+import type { StorybookConfig } from "@storybook/react-vite"
+import tsconfigPaths from "vite-tsconfig-paths"
+import react from "@vitejs/plugin-react"
 
 const config: StorybookConfig = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
@@ -16,5 +18,11 @@ const config: StorybookConfig = {
   docs: {
     autodocs: "tag",
   },
-};
-export default config;
+  viteFinal: async (config) => {
+    const { mergeConfig } = await import('vite');
+    return mergeConfig(config, {
+      plugins: [tsconfigPaths(), react()],
+    })
+  },
+}
+export default config

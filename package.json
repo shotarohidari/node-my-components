@@ -26,7 +26,8 @@
     "@vitejs/plugin-react": "^4.2.1",
     "storybook": "^8.0.10",
     "typescript": "^5.4.5",
-    "vite": "^5.2.11"
+    "vite": "^5.2.11",
+    "vite-tsconfig-paths": "^4.3.2"
   },
   "dependencies": {
     "@hidari/calendar-logic": "npm:@jsr/hidari__calendar-logic@^0.2.0",
