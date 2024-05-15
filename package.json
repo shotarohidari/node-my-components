@@ -2,6 +2,10 @@
   "name": "@hidarishotaro/my-components",
   "version": "0.2.0",
   "main": "./dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shotarohidari/node-my-components"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "check": "npx tsc --noEmit",
