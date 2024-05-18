@@ -1,5 +1,6 @@
 import { dayAndDayOfWeekList } from "@hidari/calendar-logic"
 import React, { useState } from "react"
+import { jsx } from "react/jsx-runtime"
 
 // もっと良いやり方を後で考える
 function assertIsMonth(
